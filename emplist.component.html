@@ -1,0 +1,10 @@
+<ul>
+<li *ngFor="let emp of existing_empList">
+   <a routerLink="/details/{{emp.name}}/{{emp.designation}}/{{emp.companyName}}">     {{emp.name}}***{{emp.designation}}**{{emp.companyName}}
+   </a>
+</li>
+</ul>
+
+<!--The template of detailview component should load here on click of link -->
+<router-outlet>
+</router-outlet>
